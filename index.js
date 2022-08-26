@@ -1,9 +1,19 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverseString(word) {
+  return word.split("").reverse().join("");
 }
 
-/* 
+function isPalindrome(word) {
+  const reversedWord = reverseString(word);
+  return word === reversedWord;
+}
+// Write your algorithm here
+
+
+/* if 
   Add your pseudocode here
+
+  If the first letter is the same as the last letter, and the second
+   letter is the same as the second to last letter, and so on , the function should return true.
 */
 
 /*
